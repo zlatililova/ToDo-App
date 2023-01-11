@@ -136,20 +136,25 @@ document.querySelector("form").addEventListener("submit", (event) => {
   };
   requestToServer("http://localhost:3000/tasks", "POST", body, callback);
   form.reset();
+  window.location.reload();
 });
 
 document
   .querySelector("#move-to-in-progress")
-  .addEventListener("click", (_) => {
+  .addEventListener("click", (event) => {
+    event.preventDefault();
     const toDo = document.querySelector(".todo");
     toDo.querySelectorAll(".selected").forEach((card) => {
       updateCardInProgress(card);
+      window.location.reload();
     });
   });
 
-document.querySelector("#move-to-done").addEventListener("click", (_) => {
+document.querySelector("#move-to-done").addEventListener("click", (event) => {
+  event.preventDefault();
   const inProgress = document.querySelector(".in-progress");
   inProgress.querySelectorAll(".selected").forEach((card) => {
     updateCardDone(card);
+    window.location.reload();
   });
 });
