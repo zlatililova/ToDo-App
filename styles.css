@@ -1,0 +1,75 @@
+.topnav {
+  background-color: blueviolet;
+  padding: 0.01rem;
+  color: white;
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  margin: 0px;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.todo_form {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.todo_add {
+  background-color: blueviolet;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  max-width: fit-content;
+  color: white;
+}
+
+.task_column {
+  flex: 1;
+}
+
+.task_column h2 {
+  margin: 0;
+}
+
+.card-column {
+  border: 1px solid #dee2e6;
+  height: 70vh;
+  padding: 0;
+  list-style: none;
+}
+
+.todo_item {
+  background: #ffffff;
+  border: 0.1rem solid #dee2e6;
+  padding: 0.5rem 1rem;
+}
+
+.move-button {
+  background-color: transparent;
+  cursor: pointer;
+  align-self: center;
+  border-width: 1px;
+}
+
+.selected {
+  color: #ffffff;
+  background: #7749f8;
+}
+
+.done .todo_item {
+  color: black;
+  background: #28a745;
+}

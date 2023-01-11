@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task board</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topnav">
+    <h3 style="margin-left: 2rem">Simple task board</h3>
+  </header>
+
+  <main>
+    <form class="todo_form">
+      <input type="text" placeholder="Title" id="todo_title" />
+      <textarea placeholder="Description" id="todo_desc" rows="7" style = "resize: none;"></textarea>
+      <button class="todo_add">Create</button>
+    </form>
+    <div class = "task_column">
+      <h2>ToDo</h2>
+      <ul class = "card-column todo"></ul>
+    </div>
+    <button class="move_button" id="move-to-in-progress">>></button>
+    <div class = "task_column">
+      <h2>In Progress</h2>
+      <ul class = "card-column in-progress"></ul>
+    </div>
+    <button class="move_button" id="move-to-done">>></button>
+    <div class = "task_column">
+      <h2>Done</h2>
+      <ul class = "card-column done"></ul>
+    </div>  </main>
+</body>
+
+</html>
